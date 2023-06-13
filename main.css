@@ -5,13 +5,13 @@
 }
 
 header,
-section h2
-section h3 {
+section h2 section h3 {
     font-family: 'Arimo', sans-serif;
     font-weight: normal;
 }
 
-body, input {
+body,
+input {
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -30,7 +30,7 @@ header nav li {
 header nav li a {
     color: #ecf0f2;
     text-decoration: none;
-    
+
 }
 
 .container {
@@ -92,3 +92,36 @@ button {
     column-gap: 1%;
 }
 
+@media screen and (max-width: 767px) {
+    .container-produto ul {
+        display: grid;
+        grid-template-columns: repeat(1, 98%);
+        column-gap: 1%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .sobre {
+        display: block;
+        
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-produto ul {
+        display: grid;
+        grid-template-columns: repeat(2, 44%);
+        column-gap: 1%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .sobre {
+        width: 100%;
+        display: block;
+    }
+}
