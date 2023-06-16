@@ -87,10 +87,13 @@ button {
 }
 
 .container-produto ul {
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(4, 22%);
     column-gap: 1%;
 }
+
+
 
 @media screen and (max-width: 767px) {
     .container-produto ul {
@@ -99,8 +102,12 @@ button {
         column-gap: 1%;
     }
 
+    section .container {
+        display: block;
+    }
+
     .container img {
-        width: 100%;
+        display: block;
     }
 
     .sobre {
@@ -117,7 +124,7 @@ button {
     }
 
     .container img {
-        width: 100%;
+        width: 50%;
     }
 
     .sobre {
