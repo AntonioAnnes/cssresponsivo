@@ -108,6 +108,7 @@ button {
 
     .container img {
         display: block;
+        width: 90%;
     }
 
     .sobre {
